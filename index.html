@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<script>
+			// 声明一个数组
+			var arr = [5,8,9,3,1,122,35,2,55];
+			var t = 0;
+			for(var i = 0;i < arr.length;i++)
+				for(var j = 0;j < arr.length-i-1;j++){
+					if(arr[j]>arr[j+1]){
+						t = arr[j+1];
+						arr[j+1] = arr[j];
+						arr[j] = t;
+					}
+				}
+			console.log(arr);
+		</script>
+	</body>
+</html>
+
+
